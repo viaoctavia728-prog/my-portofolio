@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Neha Anggreany Octavia</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            bg: '#0f172a',
+                            surface: '#1e293b',
+                            card: '#334155',
+                        },
+                        pink: {
+                            500: '#ec4899',
+                        },
+                        cream: {
+                            200: '#fef3c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-slate-300 font-sans antialiased selection:bg-pink-500 selection:text-white pb-16">
+
+    <!-- Navbar / Back Button -->
+    <header class="max-w-3xl mx-auto px-6 py-8 flex justify-between items-center">
+        <a href="index.html" class="inline-flex items-center gap-2 text-sm font-mono text-pink-500 hover:text-cream-200 transition-colors">
+            ← Kembali ke Portofolio
+        </a>
+        <button onclick="window.print()" class="px-4 py-2 text-xs font-mono bg-dark-surface border border-dark-card rounded-lg text-cream-200 hover:bg-pink-500 hover:text-white transition-all">
+            🖨️ Cetak / Simpan PDF
+        </button>
+    </header>
+
+    <!-- Main CV Container -->
+    <main class="max-w-3xl mx-auto px-6 bg-dark-surface p-8 sm:p-12 rounded-2xl border border-dark-card shadow-2xl space-y-8">
+        
+        <!-- Header Info -->
+        <div class="border-b border-dark-card pb-6">
+            <h1 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Neha Anggreany Octavia</h1>
+            <p class="text-pink-500 font-mono text-base mt-1">Backend Developer & IT Student</p>
+            <div class="flex flex-wrap gap-4 text-xs font-mono text-slate-400 mt-4">
+                <span>📍 Lamongan, Jawa Timur</span>
+                <span>📧 viyaviyaviy12345@gmail.com</span>
+                <span>🐙 https://github.com/viaoctavia728-prog/my-portofolio</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <section class="space-y-3">
+            <h2 class="text-sm font-mono text-cream-200 uppercase tracking-wider">01 // Ringkasan Profesional</h2>
+            <p class="text-sm sm:text-base leading-relaxed text-slate-300">
+                Mahasiswa aktif D3 Teknik Informatika di Politeknik Elektronika Negeri Surabaya (PENS) PSDKU Lamongan (Angkatan 2025) yang berfokus pada pengembangan <em>Backend</em>, skema basis data relasional, dan arsitektur sistem berbasis kontainer (Docker & Linux). Memiliki pengalaman merancang RESTful API dengan FastAPI serta terbiasa berkolaborasi dalam tim pengembangan produk digital.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section class="space-y-3">
+            <h2 class="text-sm font-mono text-cream-200 uppercase tracking-wider">02 // Pendidikan</h2>
+            <div class="bg-dark-card/50 p-4 rounded-xl border border-dark-card">
+                <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+                    <h3 class="text-white font-semibold">Politeknik Elektronika Negeri Surabaya (PENS) PSDKU Lamongan</h3>
+                    <span class="text-xs font-mono text-pink-500">2025 – Sekarang</span>
+                </div>
+                <p class="text-sm text-slate-400 mt-1">Diploma 3 (D3) Teknik Informatika</p>
+                <p class="text-xs text-slate-400 mt-2">Fokus Studi: Pemrograman Web & Backend, Sistem Operasi, Basis Data Relasional, Jaringan Komputer.</p>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="space-y-3">
+            <h2 class="text-sm font-mono text-cream-200 uppercase tracking-wider">03 // Keahlian Teknis</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                <div class="bg-dark-card/50 p-4 rounded-xl border border-dark-card space-y-2">
+                    <span class="text-xs font-mono text-pink-500 block">Bahasa Pemrograman</span>
+                    <p class="text-slate-300">Python, JavaScript, PHP, C, C++, Java</p>
+                </div>
+                <div class="bg-dark-card/50 p-4 rounded-xl border border-dark-card space-y-2">
+                    <span class="text-xs font-mono text-pink-500 block">Backend & API</span>
+                    <p class="text-slate-300">FastAPI, Node.js, Express.js, RESTful API</p>
+                </div>
+                <div class="bg-dark-card/50 p-4 rounded-xl border border-dark-card space-y-2">
+                    <span class="text-xs font-mono text-pink-500 block">Basis Data (Database)</span>
+                    <p class="text-slate-300">MySQL, PostgreSQL, Oracle PL/SQL, MongoDB</p>
+                </div>
+                <div class="bg-dark-card/50 p-4 rounded-xl border border-dark-card space-y-2">
+                    <span class="text-xs font-mono text-pink-500 block">Tools & Infrastruktur</span>
+                    <p class="text-slate-300">Docker, Linux Ubuntu, Git / GitHub, Visual Paradigm</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="space-y-4">
+            <h2 class="text-sm font-mono text-cream-200 uppercase tracking-wider">04 // Pengalaman Proyek</h2>
+            
+            <div class="bg-dark-card/50 p-4 rounded-xl border border-dark-card space-y-2">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-white font-semibold">SI-BANSOS JATIM (SI-BANSOS NGROWO)</h3>
+                    <span class="text-xs font-mono bg-pink-500/10 text-pink-500 px-2.5 py-0.5 rounded-full">Backend Developer</span>
+                </div>
+                <p class="text-xs text-slate-400">Sistem Transparansi & Pelaporan Bantuan Sosial Jawa Timur</p>
+                <p class="text-sm text-slate-300 mt-2">Merancang dan mengimplementasikan RESTful API menggunakan FastAPI dan MySQL, serta menerapkan *containerization* Docker Compose untuk efisiensi *deployment* di Linux Ubuntu.</p>
+            </div>
+
+            <div class="bg-dark-card/50 p-4 rounded-xl border border-dark-card space-y-2">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-white font-semibold">WELLZY (GEMASTIK UX Design)</h3>
+                    <span class="text-xs font-mono bg-pink-500/10 text-pink-500 px-2.5 py-0.5 rounded-full">System & UX Flow</span>
+                </div>
+                <p class="text-xs text-slate-400">Konsep Produk Digital Wellness</p>
+                <p class="text-sm text-slate-300 mt-2">Menyusun alur fungsionalitas sistem, interaksi pengguna, dan arsitektur kebutuhan fitur aplikasi kesehatan mental & fisik.</p>
+            </div>
+        </section>
+
+        <!-- Organizations -->
+        <section class="space-y-3">
+            <h2 class="text-sm font-mono text-cream-200 uppercase tracking-wider">05 // Organisasi & Aktivitas</h2>
+            <ul class="list-disc list-inside space-y-2 text-sm text-slate-300">
+                <li><strong class="text-white">Novo Club Batch 4</strong> — Aktif dalam program pengembangan kepemimpinan mahasiswa dan literasi digital.</li>
+                <li><strong class="text-white">UKM Seni Digital PENS</strong> — Anggota aktif divisi film dan keaktoran.</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
